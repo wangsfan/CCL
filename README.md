@@ -1,5 +1,5 @@
 ## Introduction
-This is our implementation of our paper *CCL: Causal Contrastive Learning for Unsupervised Graph Domain Adaptation*.
+This is our implementation of our paper *Causal Contrastive Learning for Unsupervised Graph Domain Adaptation*.
 
 **TL;DR**: CCL disentangles graph embeddings into causal and spurious components via mutual information constraints and cross-domain feature intervention, enabling robust knowledge transfer from labeled source graphs to unlabeled target graphs.
 
@@ -46,17 +46,17 @@ pip install torch-geometric
     python ptc/train.py
     ```
 
-- COX2 (cross-dataset: COX2_MD �?COX2)
+- COX2 (cross-dataset: COX2_MD â†?COX2)
     ```
     python cox2/train.py
     ```
 
-- PROTEINS �?DD (cross-dataset with different feature dimensions)
+- PROTEINS â†?DD (cross-dataset with different feature dimensions)
     ```
     python proteins_dd/train.py
     ```
 
-- BZR_MD �?BZR (cross-dataset with different feature dimensions)
+- BZR_MD â†?BZR (cross-dataset with different feature dimensions)
     ```
     python bzr/train.py
     ```
@@ -75,10 +75,10 @@ pip install torch-geometric
 | lr                |   Learning rate                             |
 | epochs            |   Number of training epochs                 |
 | warmup_epochs     |   Warm-up epochs (source-only supervision)  |
-| tau               |   Temperature τ1 for contrastive losses     |
-| tau_pseudo        |   Confidence threshold τ2 for pseudo labels |
+| tau               |   Temperature Ï„1 for contrastive losses     |
+| tau_pseudo        |   Confidence threshold Ï„2 for pseudo labels |
 | alpha             |   Loss weight for L_MI^2                    |
-| beta              |   Loss weight for (L_CDC + L_MI^1 + αL_MI^2)|
+| beta              |   Loss weight for (L_CDC + L_MI^1 + Î±L_MI^2)|
 | gamma             |   Loss weight for (L_recont + L_inter)      |
 | source_train_ratio|   Train ratio of source domain              |
 | target_train_ratio|   Train ratio of target domain              |
