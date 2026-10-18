@@ -75,11 +75,8 @@ pip install torch-geometric
 | lr                |   Learning rate                             |
 | epochs            |   Number of training epochs                 |
 | warmup_epochs     |   Warm-up epochs (source-only supervision)  |
-| tau               |   Temperature Ï„1 for contrastive losses     |
-| tau_pseudo        |   Confidence threshold Ï„2 for pseudo labels |
-| alpha             |   Loss weight for L_MI^2                    |
-| beta              |   Loss weight for (L_CDC + L_MI^1 + Î±L_MI^2)|
-| gamma             |   Loss weight for (L_recont + L_inter)      |
+| alpha             |   Loss weight for (L_CDC + L_MI^1 + L_MI^2) |
+| beta              |   Loss weight for (L_inter)                 |
 | source_train_ratio|   Train ratio of source domain              |
 | target_train_ratio|   Train ratio of target domain              |
 | seed              |   Random seed                               |
